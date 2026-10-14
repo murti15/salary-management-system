@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Environment secrets
+.env
+.env.*
+
+# Allow example configuration
+!.env.example
+
+# Local databases
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+# Build output
+dist/
+coverage/
+
+# Editor and operating system files
+.DS_Store
+Thumbs.db
+.vscode/
