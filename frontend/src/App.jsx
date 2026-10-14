@@ -91,8 +91,8 @@ export default function App() {
                 employeeApi.getSummary()
             ]);
 
-            setEmployees(employeeBody.data || []);
-            setSummary(summaryBody.data || null);
+            setEmployees(employeeBody.items || []);
+            setSummary(summaryBody);
         } catch (err) {
             setError(
                 err.message ||
